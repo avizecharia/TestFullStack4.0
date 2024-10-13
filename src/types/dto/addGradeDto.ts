@@ -2,8 +2,8 @@ import mongoose from "mongoose"
 
 
 export default interface newGradeDto  {
+    carrier:string,
     classId:mongoose.Schema.Types.ObjectId,
-    studentId:mongoose.Schema.Types.ObjectId,
-    garde:number
+    grade:number
   }
   
