@@ -3,9 +3,9 @@ import { Router } from "express";
 const router = Router()
 
 
-router.post("/login", Login);
+// router.post("/login", Login);
 
-router.delete("/logout", Logout);
+// router.delete("/logout", Logout);
 
 
 export default router
