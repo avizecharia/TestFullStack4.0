@@ -48,4 +48,4 @@ const studentSchema = new Schema<IStudent>( {
 
 
 
-export default mongoose.model<IStudent>("Post", studentSchema);
+export const studentModel =  mongoose.model<IStudent>("Student", studentSchema);

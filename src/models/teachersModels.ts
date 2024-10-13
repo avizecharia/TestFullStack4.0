@@ -29,6 +29,7 @@ const teacherSchema = new Schema<ITeacher>({
     required: [true , " you must insert email"],
     validate: [ isEmail, 'invalid email' ],
     unique:true
+
   },
   class_name: {
     type:String,
@@ -37,9 +38,9 @@ const teacherSchema = new Schema<ITeacher>({
   },
   students:{
     type:[Types.ObjectId],
-    ref:"students",
+    ref:"Student",
     default:[]
-  }
+  } 
 
 });
 
